@@ -1,0 +1,36 @@
+name: Application
+description: This is the default template for applying to join. Please fill in in English.
+title: "[Application]: "
+body:
+- type: markdown
+  attributes:
+    value: |
+      Welcome to apply to join 765 Production Hoshimi Branch!
+- type: input
+  id: nickname
+  attributes: 
+    label: What is your nickname?
+    description: We need a nickname for you, and if you are not sure, fill out your GitHub username.
+    placeholder: Ex. Lynn Nakanishi
+  validations:
+    required: true
+- type: checkboxes
+  id: identity
+  attributes: 
+    label: Are you a producer or an manager?
+    description: You can select more than one.
+    options:
+      - label: I'm a producer!
+      - label: I'm a manager!
+  validations:
+    required: true
+- type: textarea
+  id: verify
+  attributes:
+    label: Please submit information that can prove the identity selected above.
+    description: Ex. game accounts, social media accounts, photos of goods you own.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: Thanks for completing this form! We will reply to you in this question as soon as possible!
